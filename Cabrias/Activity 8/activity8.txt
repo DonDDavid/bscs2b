@@ -1,0 +1,83 @@
+Activity 8
+9.6.1 Defining Terms 
+
+1.) Class
+	- define or create an object
+2.) Object
+	- is a value in memory referenced by an identifier 
+3.) Instatiate
+	- creates an instance of a class
+4.) Instance Variable 
+	- creates variable of an object
+5.) Instance Method
+	- creates method of an object
+6.) Class Variable or static member variables
+	- variables in a class
+7.) Constructor
+	- call and initialize objects
+
+
+
+
+
+9.6.2 Java Scavenger Hunt
+
+	1.) Look for a method that checks if a certain String ends with a certain suffix. For
+example, if the given string is "Hello", the method should return true the suffix given
+is "lo", and false if the given suffix is "alp"
+
+Class: String
+Method Declaration: public boolean endsWith(String value)
+Sample Usage:
+String a = "Hello"
+System.out.println(a.endsWith("lo"));
+
+Output: true
+
+System.out.println(a.endsWith("alp"));
+
+Output: false
+
+
+	2.) Look for the method that determines the character representation for a specific digit
+in the specified radix. For example, if the input digit is 15, and the radix is 16, the
+method would return the character F, since F is the hexadecimal representation for
+the number 15 (base 10)
+
+Class: Character
+Method Declaration: public static char forDigit(int digit, int radix) 
+Sample Usage:
+char a = Character.forDigit(15,16);
+System.out.println(a);
+
+Output: F
+
+
+	3.) Look for the method that terminates the currently running Java Virtual Machine
+
+Class: System
+Method Declaration: public static void exit(int i)
+Sample Usage :
+System.exit(0);
+
+
+	4.) Look for the method that gets the floor of a double value. For example, if I input a
+3.13, the method should return the value 3.
+
+Class: Math
+Method Declaration: public static double floor(double value)
+Sample Usage:
+System.out.println(Math.floor(3.13));
+
+Output: 3
+
+
+	5.) Look for the method that determines if a certain character is a digit. For example, if I
+input '3', it returns the value true.
+
+Class: Character
+Method Declaration: public static boolean isDigit(char value)
+Sample Usage :
+System.out.println(Character.isDigit('a'));
+
+Output: true
